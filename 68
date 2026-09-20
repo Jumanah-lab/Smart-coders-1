@@ -1,0 +1,6 @@
+n = input("Enter number: ")
+
+digits = [int(d) for d in n if d.isdigit()]
+
+print("Largest:", max(digits))
+print("Smallest:", min(digits))
