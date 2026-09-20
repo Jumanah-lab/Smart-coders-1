@@ -1,0 +1,11 @@
+n = int(input("Enter rows: "))
+
+for i in range(1, n + 1):
+    for j in range(1, 2 * n):
+        d = abs(n - j)
+
+        if abs(i - n) == d or i == n:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
