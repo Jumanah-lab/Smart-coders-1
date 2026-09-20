@@ -1,0 +1,7 @@
+h = int(input("Enter hour: "))
+m = int(input("Enter minutes: "))
+
+angle = abs(30 * (h % 12) - 5.5 * m)
+angle = min(angle, 360 - angle)
+
+print("Smaller angle:", angle)
