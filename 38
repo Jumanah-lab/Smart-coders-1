@@ -1,0 +1,7 @@
+n = int(input("Enter number: "))
+s = sum(int(d)**3 for d in str(n))
+
+if s == n:
+    print("Armstrong number")
+else:
+    print("Not Armstrong")
