@@ -1,0 +1,9 @@
+n = input("Enter number: ")
+power = len(n)
+
+s = sum(int(d)**power for d in n)
+
+if s == int(n):
+    print("Armstrong")
+else:
+    print("Not Armstrong")
