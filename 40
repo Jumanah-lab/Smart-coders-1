@@ -1,0 +1,10 @@
+balance = float(input("Enter balance: "))
+amount = float(input("Enter withdrawal: "))
+minimum = 500
+
+if amount <= balance - minimum and amount > 0:
+    balance -= amount
+    print("Withdrawal successful")
+    print("Balance:", balance)
+else:
+    print("Withdrawal rejected")
